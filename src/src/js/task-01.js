@@ -1,12 +1,22 @@
 /* 1/ Порахує і виведе в консоль кількість категорій в ul#categories, 
 тобто елементів li.item. */
 
-/* const lists = document.getElementById('categories'); */
+const allCategories = () => {
+  const categoriesEl = document.querySelector('ul#categories');
+  /* console.log(categoriesEl); */
 
-/* console.log(list) */
-/* Number of categories =  */
+  const liItemEl = categoriesEl.querySelectorAll('li.item');
+  /* console.log(liItemEl); */
+  liItemEl.forEach(function (number, index) {
+  console.log(`Індекс ${fist}, значення ${number}`);
+});
 
-const categories = document.getElementById('categories') 
-  for (let i = 0; i <= categories.lenght-1; i += 1) {
-      console.log(i);
-  }
+
+console.log(`Number of categories: ${liItemEl.lenght}`);
+
+}
+/* const listCategories = document.querySelector('#categories');
+
+for (let i = 0; i < listCategories.length; i += 1) {
+  console.log(`Number of categories: ${numbers[i]}`);
+} */
