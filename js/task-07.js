@@ -1,13 +1,8 @@
 const inputFsText = document.querySelector("#font-size-control");
-const inputText = document.querySelector("#text");
+const text = document.querySelector("#text");
 
-/* inputText.addEventListener('input', (event) => {
+inputFsText.addEventListener('input', (event) => {
 
-    const min = parseInt(inputText.getAttribute("min"));
-    const max = parseInt(inputText.getAttribute("max"));
+text.style.fontSize = `${event.currentTarget.value}px`;
 
-    for (let fontSize = min; fontSize < max; fontSize += 1) {
-
-    inputText.textContent = event.currentTarget.inputText;
-}
-}) */
+})
