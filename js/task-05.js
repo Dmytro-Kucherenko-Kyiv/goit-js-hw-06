@@ -1,6 +1,8 @@
 const inputName = document.querySelector("#name-input");
 const outputName = document.querySelector("#name-output");
 
+inputName.value = ''
+
 inputName.addEventListener('input', changeName);
 
 function changeName(event) {
